@@ -3,10 +3,10 @@ import json
 import os
 from datetime import datetime
 
-# Ruta al archivo JSON donde se almacenan las tareas
+# Path to the JSON file where the tasks are stored
 TASKS_FILE = "tasks.json"
 
-# Función para cargar tareas desde el archivo JSON
+# Function to load tasks from JSON file
 def load_tasks():
     if not os.path.exists(TASKS_FILE):
         return []
@@ -16,16 +16,16 @@ def load_tasks():
         except json.JSONDecodeError:
             return []
 
-# Función para guardar tareas en el archivo JSON
+# Function to save tasks to JSON file
 def save_tasks(tasks):
     with open(TASKS_FILE, "w") as file:
         json.dump(tasks, file, indent=4)
 
-# Función para generar un ID único para una nueva tarea
+# Function to generate a unique ID for a new task
 def generate_id(tasks):
     return max((task["id"] for task in tasks), default=0) + 1
 
-# Función para agregar una nueva tarea
+# Function to add a new task
 def add_task(description):
     tasks = load_tasks()
     new_task = {
@@ -39,7 +39,7 @@ def add_task(description):
     save_tasks(tasks)
     print(f"Task added successfully (ID: {new_task['id']})")
 
-# Función para actualizar una tarea existente
+# Function to update an existing task
 def update_task(task_id, new_description):
     tasks = load_tasks()
     for task in tasks:
@@ -51,14 +51,14 @@ def update_task(task_id, new_description):
             return
     print(f"Task {task_id} not found.")
 
-# Función para eliminar una tarea
+# Function to delete a task
 def delete_task(task_id):
     tasks = load_tasks()
     tasks = [task for task in tasks if task["id"] != task_id]
     save_tasks(tasks)
     print(f"Task {task_id} deleted successfully.")
 
-# Función para cambiar el estado de una tarea
+# Function to change the status of a task
 def change_status(task_id, status):
     tasks = load_tasks()
     for task in tasks:
@@ -70,7 +70,7 @@ def change_status(task_id, status):
             return
     print(f"Task {task_id} not found.")
 
-# Función para listar tareas
+# Function to list tasks
 def list_tasks(filter_status=None):
     tasks = load_tasks()
     if filter_status:
@@ -80,7 +80,7 @@ def list_tasks(filter_status=None):
     for task in tasks:
         print(f"[{task['id']}] {task['description']} - {task['status']} (Created: {task['createdAt']})")
 
-# Función principal para manejar los comandos de la línea de comandos
+# Main function to handle command line commands
 def main():
     if len(sys.argv) < 2:
         print("Usage: task-cli <command> [options]")
