@@ -35,8 +35,6 @@ python task-cli.py list to_do          # Shows pending tasks
 
 
 
-This renders as:
-
 ```plaintext
 Function()
 --> Step 1
@@ -45,3 +43,23 @@ Function()
 --> Step 2
     --> Sub-step 2.1
         --> Sub-step 2.1.1
+
+
+- Function()
+  - ➡️ Step 1
+    - ➡️ Sub-step 1.1
+    - ➡️ Sub-step 1.2
+  - ➡️ Step 2
+    - ➡️ Sub-step 2.1
+      - ➡️ Sub-step 2.1.1
+
+
+```plaintext
+Start
+↳ Step 1
+   ↳ Sub-step 1.1
+      ↳ Sub-step 1.1.1
+↳ Step 2
+   ↳ Sub-step 2.1
+End
+
