@@ -3,13 +3,14 @@
 A simple command-line application to manage tasks efficiently. This tool allows you to add, update, delete, and list tasks while keeping track of their statuses (To-Do, In Progress, Done). The tasks are stored in a JSON file for persistence.
 
 ## Features
-### Add new tasks with descriptions.
-### Update task descriptions.
-### Delete tasks.
-### Mark tasks as "In Progress" or "Done."
-### List tasks by their status (all, To-Do, In Progress, Done).
+#### Add new tasks with descriptions.
+#### Update task descriptions.
+#### Delete tasks.
+#### #Mark tasks as "In Progress" or "Done."
+#### List tasks by their status (all, To-Do, In Progress, Done).
 
-## Here is the organizational structure of the commands, explaining their usage and logic:
+## CODE Structure
+#### Here is the organizational structure of the commands, explaining their usage and logic:
 ```plaintext
 Begin
 ↳ Add Tasks
