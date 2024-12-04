@@ -32,10 +32,3 @@ python task-cli.py list done          # Shows completed tasks
 python task-cli.py list in-progress   # Shows tasks in progress
 python task-cli.py list todo          # Shows pending tasks
 ```
-
-
-### **Rendered Output in GitHub:**
-```bash
-python task-cli.py list done          # Shows completed tasks
-python task-cli.py list in-progress   # Shows tasks in progress
-python task-cli.py list todo          # Shows pending tasks
