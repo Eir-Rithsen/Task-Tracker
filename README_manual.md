@@ -29,3 +29,9 @@ If the taskhas ID 1, update its description with:
 ### python task-cli.py list done      #### Shows completed tasks
 ### python task-cli.py list in-progress   #### Shows tasks in progress
 ### python task-cli.py list todo          #### Shows pending tasks
+
+
+```bash
+python task-cli.py list done          # Shows completed tasks
+python task-cli.py list in-progress   # Shows tasks in progress
+python task-cli.py list todo          # Shows pending tasks
