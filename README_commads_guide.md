@@ -1,9 +1,9 @@
 #README commands guide
 
 ##  Add a task:
-
+```
 ### python task-cli.py add "Buy groceries"
-
+```
 This will add a new task and automatically generate the tasks.json file if it doesn’t exist.
 
 ## List all tasks:
