@@ -1,0 +1,112 @@
+# Task Organizer CLI
+
+A simple command-line application to manage tasks efficiently. This tool allows you to add, update, delete, and list tasks while keeping track of their statuses (To-Do, In Progress, Done). The tasks are stored in a JSON file for persistence.
+
+## Features
+### Add new tasks with descriptions.
+### Update task descriptions.
+### Delete tasks.
+### Mark tasks as "In Progress" or "Done."
+### List tasks by their status (all, To-Do, In Progress, Done).
+
+## Here is the organizational structure of the commands, explaining their usage and logic:
+
+Begin
+↳ Add Tasks
+   ↳ Substep: Add a new task to the organizer
+      ↳ Command: python task-cli.py add "Task Description"
+         ↳ Example: python task-cli.py add "Buy groceries"
+↳ Update Tasks
+   ↳ Substep: Modify the description of an existing task
+      ↳ Command: python task-cli.py update <Task ID> "New Description"
+         ↳ Example: python task-cli.py update 1 "Buy groceries and cook dinner"
+↳ Delete Tasks
+   ↳ Substep: Remove a task from the organizer
+      ↳ Command: python task-cli.py delete <Task ID>
+         ↳ Example: python task-cli.py delete 1
+↳ Manage Task Status
+   ↳ Substep 1: Mark a task as "In Progress"
+      ↳ Command: python task-cli.py mark-in-progress <Task ID>
+         ↳ Example: python task-cli.py mark-in-progress 1
+   ↳ Substep 2: Mark a task as "Done"
+      ↳ Command: python task-cli.py mark-done <Task ID>
+         ↳ Example: python task-cli.py mark-done 1
+↳ List Tasks
+   ↳ Substep 1: Display all tasks
+      ↳ Command: python task-cli.py list
+   ↳ Substep 2: Filter tasks by status
+      ↳ Done
+         ↳ Command: python task-cli.py list done
+      ↳ In Progress
+         ↳ Command: python task-cli.py list in-progress
+      ↳ To Do
+         ↳ Command: python task-cli.py list todo
+End
+
+## Examples
+### Here are some common use cases:
+
+#### Add a Task
+
+```
+python task-cli.py add "Buy groceries"
+```
+#### Update a Task
+
+```
+python task-cli.py update 1 "Buy groceries and cook dinner"
+```
+### Delete a Task
+
+```
+python task-cli.py delete 1
+```
+### Mark a Task as In Progress
+
+bash
+Copiar código
+python task-cli.py mark-in-progress 1
+Mark a Task as Done
+
+bash
+Copiar código
+python task-cli.py mark-done 1
+List All Tasks
+
+bash
+Copiar código
+python task-cli.py list
+Filter Tasks by Status
+
+List Done Tasks:
+bash
+Copiar código
+python task-cli.py list done
+List In Progress Tasks:
+bash
+Copiar código
+python task-cli.py list in-progress
+List To-Do Tasks:
+bash
+Copiar código
+python task-cli.py list todo
+Task Properties
+Each task includes the following properties:
+
+id: A unique identifier for the task.
+description: A short description of the task.
+status: The status of the task (todo, in-progress, done).
+createdAt: The date and time when the task was created.
+updatedAt: The date and time when the task was last updated.
+Error Handling
+The application is designed to handle edge cases gracefully, such as:
+
+Trying to update or delete a non-existent task.
+Invalid command syntax.
+Contributing
+Fork the repository.
+Create a new branch for your feature/bugfix.
+Commit your changes.
+Push to the branch and submit a pull request.
+License
+This project is licensed under the MIT License.
