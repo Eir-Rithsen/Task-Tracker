@@ -30,7 +30,7 @@ python task-cli.py mark-in-progress 1
 ```bash
 python task-cli.py list done          # Shows completed tasks
 python task-cli.py list in-progress   # Shows tasks in progress
-python task-cli.py list to_do          # Shows pending tasks
+python task-cli.py list to_do         # Shows pending tasks
 ```
 
 
