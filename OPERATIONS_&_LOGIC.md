@@ -6,7 +6,7 @@ A simple command-line application to manage tasks efficiently. This tool allows 
 #### Add new tasks with descriptions.
 #### Update task descriptions.
 #### Delete tasks.
-#### #Mark tasks as "In Progress" or "Done."
+#### Mark tasks as "In Progress" or "Done."
 #### List tasks by their status (all, To-Do, In Progress, Done).
 
 ## CODE Structure
