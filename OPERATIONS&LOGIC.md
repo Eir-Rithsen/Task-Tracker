@@ -10,7 +10,7 @@ A simple command-line application to manage tasks efficiently. This tool allows 
 ### List tasks by their status (all, To-Do, In Progress, Done).
 
 ## Here is the organizational structure of the commands, explaining their usage and logic:
-
+```plaintext
 Begin
 ↳ Add Tasks
    ↳ Substep: Add a new task to the organizer
@@ -42,6 +42,7 @@ Begin
       ↳ To Do
          ↳ Command: python task-cli.py list todo
 End
+```
 ## Each task includes the following properties:
 
 ### id: A unique identifier for the task.
