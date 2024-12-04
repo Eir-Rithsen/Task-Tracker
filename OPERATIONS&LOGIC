@@ -42,71 +42,10 @@ Begin
       ↳ To Do
          ↳ Command: python task-cli.py list todo
 End
+## Each task includes the following properties:
 
-## Examples
-### Here are some common use cases:
-
-#### Add a Task
-
-```
-python task-cli.py add "Buy groceries"
-```
-#### Update a Task
-
-```
-python task-cli.py update 1 "Buy groceries and cook dinner"
-```
-### Delete a Task
-
-```
-python task-cli.py delete 1
-```
-### Mark a Task as In Progress
-
-bash
-Copiar código
-python task-cli.py mark-in-progress 1
-Mark a Task as Done
-
-bash
-Copiar código
-python task-cli.py mark-done 1
-List All Tasks
-
-bash
-Copiar código
-python task-cli.py list
-Filter Tasks by Status
-
-List Done Tasks:
-bash
-Copiar código
-python task-cli.py list done
-List In Progress Tasks:
-bash
-Copiar código
-python task-cli.py list in-progress
-List To-Do Tasks:
-bash
-Copiar código
-python task-cli.py list todo
-Task Properties
-Each task includes the following properties:
-
-id: A unique identifier for the task.
-description: A short description of the task.
-status: The status of the task (todo, in-progress, done).
-createdAt: The date and time when the task was created.
-updatedAt: The date and time when the task was last updated.
-Error Handling
-The application is designed to handle edge cases gracefully, such as:
-
-Trying to update or delete a non-existent task.
-Invalid command syntax.
-Contributing
-Fork the repository.
-Create a new branch for your feature/bugfix.
-Commit your changes.
-Push to the branch and submit a pull request.
-License
-This project is licensed under the MIT License.
+### id: A unique identifier for the task.
+### description: A short description of the task.
+### status: The status of the task (todo, in-progress, done).
+### createdAt: The date and time when the task was created.
+### updatedAt: The date and time when the task was last updated.
