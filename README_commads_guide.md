@@ -1,6 +1,6 @@
 #README commands guide
 
-##  **Add a task:
+### **Add a task:
 ```
  python task-cli.py add "Buy groceries"
 ```
