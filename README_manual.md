@@ -21,16 +21,20 @@ If the taskhas ID 1, update its description with:
 ### python task-cli.py mark-in-progress 1
 
 ## Delete a task:
-
-### python task-cli.py delete 1
+```bash
+ python task-cli.py delete 1
+```
 
 ## List tasks by status:
 
-### python task-cli.py list done      #### Shows completed tasks
-### python task-cli.py list in-progress   #### Shows tasks in progress
-### python task-cli.py list todo          #### Shows pending tasks
+```bash
+python task-cli.py list done          # Shows completed tasks
+python task-cli.py list in-progress   # Shows tasks in progress
+python task-cli.py list todo          # Shows pending tasks
+```
 
 
+### **Rendered Output in GitHub:**
 ```bash
 python task-cli.py list done          # Shows completed tasks
 python task-cli.py list in-progress   # Shows tasks in progress
