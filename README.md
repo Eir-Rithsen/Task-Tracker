@@ -16,7 +16,7 @@ Mark a task as in progress or done
 #### List all tasks that are in progress
 ---
 
-## He1re are some constraints to guide the implementation:
+## Here are some constraints to guide the implementation:
 
 #### You can use any programming language to build this project.
 #### Use positional arguments in command line to accept user inputs.
