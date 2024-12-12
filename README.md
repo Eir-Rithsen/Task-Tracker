@@ -4,7 +4,7 @@ https://roadmap.sh/projects/task-tracker
 
 
 This project will help you practice your programming skills, including working with the filesystem, handling user inputs, and building a simple CLI application.
-
+---
 Requirements
 The application should run from the command line, accept user actions and inputs as arguments, and store the tasks in a JSON file. The user should be able to:
 
@@ -23,7 +23,7 @@ The JSON file should be created if it does not exist.
 Use the native file system module of your programming language to interact with the JSON file.
 Do not use any external libraries or frameworks to build this project.
 Ensure to handle errors and edge cases gracefully.
-
+---
 Task Properties
 Each task should have the following properties:
 
